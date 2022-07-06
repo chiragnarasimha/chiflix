@@ -7,8 +7,8 @@ import axios from "axios";
 /**
  * This is the axios instance of moviedb.
  */
-const moviedb_instance = axios.create({
+const instance = axios.create({
   baseURL: "https://api.themoviedb.org/3",
 });
 
-export default moviedb_instance;
+export default instance;

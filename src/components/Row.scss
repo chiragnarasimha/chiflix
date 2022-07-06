@@ -1,0 +1,45 @@
+/* .row {
+  display: flex;
+} */
+
+.row {
+  // display: fl;
+  margin-left: 2rem;
+
+  &__title {
+    display: flex;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  &__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 2rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__poster {
+    object-fit: contain;
+    width: 100%;
+    // max-width: 15rem;
+    max-height: 15rem;
+    margin-right: 1rem;
+    transition: transform 450ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__posterLarge {
+    max-height: 25rem;
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}

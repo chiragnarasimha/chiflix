@@ -1,12 +1,17 @@
-import "./App.css";
+import "./App.scss";
 import Row from "./components/Row";
 
-function App() {
+import React from "react";
+import Rows from "./components/Rows";
+import Banner from "./components/Banner";
+
+const App = () => {
   return (
     <div className="App">
-      <Row>
+      <Banner />
+      <Rows />
     </div>
   );
-}
+};
 
 export default App;
