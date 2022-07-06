@@ -9,12 +9,9 @@ const Banner = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       const request = await moviedb_instance.get(
-        moviedb_api["NETFLIX ORIGINALS"]
+        moviedb_api["CHIFLIX ORIGINALS"]
       );
 
-      //   console.log(request);
-
-      //   const requestMovie = request.data.results;
       const requestMovie =
         request.data.results[
           Math.floor(Math.random() * (request.data.results.length - 1))
