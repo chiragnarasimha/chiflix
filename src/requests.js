@@ -8,7 +8,7 @@ const API_KEY = "9cb73c5cc8c64b259d35e8a228059987";
  * This contains a list of all the apis used in this project
  */
 const moviedb_api = {
-  "NETFLIX ORIGINALS": `/discover/tv?api_key=${API_KEY}&with_network=213`,
+  "CHIFLIX ORIGINALS": `/discover/tv?api_key=${API_KEY}&with_network=213`,
   "Trending Now": `/trending/all/week?api_key=${API_KEY}&language=en-US`,
   "Top Rated": `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
   "Action Movies": `/discover/movie?api_key=${API_KEY}&with_genres=28`,

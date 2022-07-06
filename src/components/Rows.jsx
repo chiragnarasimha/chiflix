@@ -25,7 +25,7 @@ const Rows = () => {
         const apiURL = moviedb_api[movie];
 
         let isLargeRow = false;
-        if (movie === "NETFLIX ORIGINALS") {
+        if (movie === "CHIFLIX ORIGINALS") {
           isLargeRow = true;
         }
         rowArray.push(
