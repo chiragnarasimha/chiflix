@@ -2,7 +2,7 @@
  * requests.js contains a list of all the apis that will be used in this project
  */
 
-const API_KEY = "9cb73c5cc8c64b259d35e8a228059987";
+export const API_KEY = "9cb73c5cc8c64b259d35e8a228059987";
 
 /**
  * This contains a list of all the apis used in this project
