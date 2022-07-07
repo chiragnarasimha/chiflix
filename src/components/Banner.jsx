@@ -27,31 +27,29 @@ const Banner = (props) => {
   };
 
   return (
-    <div>
-      <header
-        className="banner"
-        style={{
-          backgroundSize: "cover",
-          backgroundImage: `url("${POSTER_BASE_URL}${movie?.backdrop_path}")`,
-          backgroundPosition: "center center",
-        }}
-      >
-        <div className="banner--fadeBottom">
-          <div className="banner__contents">
-            <h1 className="banner__h1">
-              {movie?.title || movie?.name || movie?.original_name}
-            </h1>
-            <div className="banner__buttons">
-              <button className="banner__button">Play</button>
-              <button className="banner__button">My List</button>
-            </div>
-            <h1 className="banner__description">
-              {truncate(movie.overview, 200)}
-            </h1>
+    <header
+      className="banner"
+      style={{
+        backgroundSize: "cover",
+        backgroundImage: `url("${POSTER_BASE_URL}${movie?.backdrop_path}")`,
+        backgroundPosition: "center center",
+      }}
+    >
+      <div className="banner--fadeBottom">
+        <div className="banner__contents">
+          <h1 className="banner__h1">
+            {movie?.title || movie?.name || movie?.original_name}
+          </h1>
+          <div className="banner__buttons">
+            <button className="banner__button">Play</button>
+            <button className="banner__button">My List</button>
           </div>
+          <h1 className="banner__description">
+            {truncate(movie.overview, 200)}
+          </h1>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };
 
