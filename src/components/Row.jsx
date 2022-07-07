@@ -89,21 +89,18 @@ const Row = ({ title, fetchURL, isLargeRow }) => {
       const request = await moviedb_instance.get(`${requestURL}`);
       console.log(request.data.results);
 
+      // If we are not able to find any videos, then just stop exit the function
       if (request.data.results.length === 0) {
-        setTrailerFound(false);
         setTrailerURL(`error`);
-      } else {
-        setTrailerFound(true);
+        return;
       }
       const randomTrailer = getRandomItem(request.data.results);
       setTrailerURL(randomTrailer.key);
-
       return randomTrailer.key;
     };
     fetchData();
     setPreviousMovie(movie);
   };
-  console.log({ TrailerURL: trailerURL, TrailerFound: trailerFound });
 
   return (
     <div className="row">
@@ -123,10 +120,10 @@ const Row = ({ title, fetchURL, isLargeRow }) => {
           );
         })}
       </div>
-      {trailerFound === false && showTrailer === true && (
+      {/* {trailerFound === false && showTrailer === true && (
         <YouTube videoId="error" opts={youTubePlayerOpts} />
-      )}
-      {trailerFound === true && showTrailer === true && (
+      )} */}
+      {showTrailer === true && (
         <YouTube videoId={trailerURL} opts={youTubePlayerOpts} />
       )}
     </div>
