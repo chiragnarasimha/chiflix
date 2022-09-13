@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/chiflix/static/css/main.91007cf5.css",
+    "main.js": "/chiflix/static/js/main.b77c774e.js",
+    "static/js/787.936e0800.chunk.js": "/chiflix/static/js/787.936e0800.chunk.js",
+    "static/media/profileIcon.png": "/chiflix/static/media/profileIcon.c93150720beffa468916.png",
+    "static/media/chiflix_logo_big.png": "/chiflix/static/media/chiflix_logo_big.642a16f419cceb936316.png",
+    "index.html": "/chiflix/index.html",
+    "main.91007cf5.css.map": "/chiflix/static/css/main.91007cf5.css.map",
+    "main.b77c774e.js.map": "/chiflix/static/js/main.b77c774e.js.map",
+    "787.936e0800.chunk.js.map": "/chiflix/static/js/787.936e0800.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91007cf5.css",
+    "static/js/main.b77c774e.js"
+  ]
+}
